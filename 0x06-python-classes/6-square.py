@@ -1,15 +1,23 @@
 #!/usr/bin/python3
 """
 This is the "Square"  module.
-This module provides a simple Square class with initialized size.
+
+This module provides a simple Square class with initialize size.
 Defaults size to 0. Raise error on invalid size inputs.
-Methods Getter and Setter properties for size.
+Attribute position which takes a default (0, 0) tuple.
+Methods Getter and Setter properties for size and position.
 Method area returns size of area of the square.
+Method my_print prints the square using "#", moved over left and top using
+position tuple.
 """
 
 
 class Square:
-    """A class that defines a Square by size"""
+    """A class that defines a square by size, which defaults 0.
+    Also defines position using a tuple, which defaults (0, 0).
+    Square can also get area, and print square using '#'.
+    When printing, using position, offset on top and left.
+    """
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -25,6 +33,7 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
     @property
     def position(self):
         return self.__position
