@@ -1,36 +1,42 @@
 
-0x07. Python - Test-driven development
-Python
-UnitTests
-TDD
- By: Guillaume
- Weight: 1
- Project will start Dec 22, 2022 6:00 AM, must end by Jan 4, 2023 6:00 AM
- will be released at Jan 4, 2023 6:00 AM
- An auto review will be launched at the deadline
-Concepts
+# 0x07. Python - Test-driven development
+[Python]()
+[UnitTests]()
+[TDD]()
+ 
+ - By: Guillaume
+ - Weight: 1
+ - Project will start Dec 22, 2022 6:00 AM, must end by Jan 4, 2023 6:00 AM
+ - Checker will be released at Jan 4, 2023 6:00 AM
+ - An auto review will be launched at the deadline
+
+## Concepts
 For this project, we expect you to look at this concept:
 
-Never forget a test
+- [Never forget a test](https://alx-intranet.hbtn.io/concepts/47)
 
 
-Background Context
+## Background Context
+
 Important notice on intranet checks for Python projects
+
 Starting from today:
 
 Based on the requirements of each task, you should always write the documentation (module(s) + function(s)) and tests first, before you actually code anything
 The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
 We strongly encourage you to work together on test cases, so that you don’t miss any edge case. But not in the implementation of them!
 Don’t trust the user, always think about all possible edge cases
-Resources
+
+### Resources
 Read or watch:
 
-doctest — Test interactive Python examples (until “26.2.3.7. Warnings” included)
-doctest – Testing through documentation
-Unit Tests in Python
-Unittest module
-Interactive and Non-interactive tests
-Learning Objectives
+- [doctest — Test interactive Python examples (until “26.2.3.7. Warnings” included)]()
+- [doctest – Testing through documentation]()
+- [Unit Tests in Python]()
+- [Unittest module]()
+- [Interactive and Non-interactive tests]()
+- [Learning Objectives]()
+
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 General
@@ -73,11 +79,12 @@ Tasks
 mandatory
 Write a function that adds 2 integers.
 
-Prototype: def add_integer(a, b=98):
-a and b must be integers or floats, otherwise raise a TypeError exception with the message a must be an integer or b must be an integer
-a and b must be first casted to integers if they are float
-Returns an integer: the addition of a and b
-You are not allowed to import any module
+- Prototype: `def add_integer(a, b=98)`:
+- `a` and `b` must be integers or floats, otherwise raise a TypeError exception with the message `a` must be an integer or `b` must be an integer
+- a and b must be first casted to integers if they are float
+- Returns an integer: the addition of a and b
+- You are not allowed to import any module
+```python
 guillaume@ubuntu:~/0x07$ cat 0-main.py
 #!/usr/bin/python3
 add_integer = __import__('0-add_integer').add_integer
@@ -94,7 +101,8 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)
-
+```
+```shell
 guillaume@ubuntu:~/0x07$ ./0-main.py
 3
 98
@@ -110,11 +118,13 @@ guillaume@ubuntu:~/0x07$ python3 -c 'print(__import__("0-add_integer").__doc__)'
 guillaume@ubuntu:~/0x07$ python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)' | wc -l
 3
 guillaume@ubuntu:~/0x07$ 
+```
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x07-python-test_driven_development
-File: 0-add_integer.py, tests/0-add_integer.txt
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x07-python-test_driven_development`
+- File: `0-add_integer.py, tests/0-add_integer.txt`
   
 1. Divide a matrix
 mandatory
