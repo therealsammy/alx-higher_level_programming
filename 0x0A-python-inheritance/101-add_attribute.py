@@ -1,16 +1,13 @@
 #!/usr/bin/python3
+"""
+is add_attribute module
+"""
 
 
-def add_attribute(obj, name, value):
-    """function that adds a new attribute to an object if it’s possible """
-
-    for element in dir(obj):
-        if element == '__dict__':
-            setattr(obj, name, value)
-            return
-    raise TypeError("can't add new attribute")
-
-    # try:
-    #     self.name = value
-    # except:
-    #     raise TypeError("can't add new attribute")
+def add_attribute(obj, a, v):
+        """function that adds a new attribute to an object if it’s possible """
+    res = getattr(obj, "__doc__", None)
+    if res is None:
+        setattr(obj, a, v)
+    else:
+        raise TypeError("can't add new attribute")
