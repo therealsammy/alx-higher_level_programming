@@ -1,23 +1,26 @@
-0x0A. Python - Inheritance
-Python
-OOP
-Inheritance
+# 0x0A. Python - Inheritance
+
+[Python]()
+[OOP]()
+[Inheritance]()
 By: Guillaume
 Weight: 1
-Project will start Jan 9, 2023 6:00 AM, must end by Jan 10, 2023 6:00 AM
-was released at Jan 9, 2023 12:00 PM
-An auto review will be launched at the deadline
-Resources
-Read or watch:
 
-Inheritance
-Multiple inheritance
-Inheritance in Python
-Learn to Program 10 : Inheritance Magic Methods
-Learning Objectives
+## Resources
+
+### Read or watch:
+
+[Inheritance]()
+[Multiple inheritance]()
+[Inheritance in Python]()
+[Learn to Program 10 : Inheritance Magic Methods]()
+
+## Learning Objectives
+
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-General
+### General
+
 Why Python programming is awesome
 What is a superclass, baseclass or parentclass
 What is a subclass
