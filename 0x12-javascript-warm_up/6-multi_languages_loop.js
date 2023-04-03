@@ -3,8 +3,8 @@
 // script to print strings using a loop
 
 let i;
-const myString = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+const myString = ["C is fun", "Python is cool", "JavaScript is amazing"];
 
-for (i = 0; i < 3; i++) {
+for (i = 0; i < myString.length; i++) {
   console.log(myString[i]);
 }
